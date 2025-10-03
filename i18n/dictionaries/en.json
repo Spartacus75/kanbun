@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "badge": "Coming Soon",
+    "title": "Master the",
+    "titleHighlight": "JLPT",
+    "titleEnd": "with Confidence",
+    "subtitle": "The intelligent learning platform to ace your Japanese exam. Prepare effectively with adaptive quizzes and personalized tracking.",
+    "emailPlaceholder": "your@email.com",
+    "ctaButton": "Join Waitlist",
+    "ctaButtonLoading": "Joining...",
+    "successMessage": "🎉 Thank you! You're on the waitlist.",
+    "errorMessage": "An error occurred. Please try again.",
+    "privacyText": "Be among the first to discover Kanbun 🇯🇵",
+    "stats": {
+      "levels": "N5-N1",
+      "levelsLabel": "All Levels",
+      "questions": "1000+",
+      "questionsLabel": "Questions",
+      "ai": "AI",
+      "aiLabel": "Adaptive"
+    }
+  },
+  "features": {
+    "title": "Everything to Pass the JLPT",
+    "subtitle": "A complete platform to prepare your exam methodically and efficiently",
+    "list": [
+      {
+        "icon": "🎯",
+        "title": "Adaptive Quizzes",
+        "description": "Exercises that adapt to your level and identify your weaknesses for personalized learning."
+      },
+      {
+        "icon": "📊",
+        "title": "Progress Tracking",
+        "description": "Visualize your progress in real-time with detailed statistics by skill and JLPT level."
+      },
+      {
+        "icon": "📝",
+        "title": "Vocabulary & Kanji",
+        "description": "Learn essential words and kanji with lists organized by level and smart flashcards."
+      },
+      {
+        "icon": "🎧",
+        "title": "Listening Comprehension",
+        "description": "Practice with authentic listening exercises and improve your oral comprehension."
+      },
+      {
+        "icon": "✍️",
+        "title": "Practical Grammar",
+        "description": "Master JLPT grammar points with clear explanations and practical exercises."
+      },
+      {
+        "icon": "🏆",
+        "title": "Mock Exams",
+        "description": "Prepare under real conditions with timed and corrected full exams."
+      }
+    ],
+    "problemSolution": {
+      "title": "Preparing for JLPT Shouldn't Be Complicated",
+      "problemTitle": "😓 The Problem",
+      "problems": [
+        "Resources scattered across the internet",
+        "Hard to track your progress",
+        "No exercises adapted to your level",
+        "Lack of personalized feedback"
+      ],
+      "solutionTitle": "✨ The Solution",
+      "solutions": [
+        "Everything centralized in one place",
+        "Detailed tracking of your progress",
+        "AI that adapts exercises",
+        "Instant and accurate feedback"
+      ]
+    }
+  },
+  "footer": {
+    "description": "The intelligent learning platform to ace your JLPT. Prepare effectively with adaptive quizzes.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "support": "Support",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "copyright": "All rights reserved. Made with ❤️ for JLPT learners"
+  },
+  "blog": {
+    "title": "Kanbun Blog",
+    "subtitle": "Tips, strategies and resources to ace your JLPT",
+    "comingSoon": {
+      "title": "Articles Coming Soon",
+      "description": "We're preparing quality content to help you in your JLPT preparation. Check back soon!",
+      "cta": "Join the Waitlist"
+    },
+    "backToHome": "Kanbun"
+  }
+}

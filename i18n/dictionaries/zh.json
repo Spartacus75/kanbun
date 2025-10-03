@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "badge": "即将推出",
+    "title": "自信掌握",
+    "titleHighlight": "JLPT",
+    "titleEnd": "",
+    "subtitle": "智能学习平台，助您顺利通过日语能力考试。通过自适应测验和个性化跟踪高效备考。",
+    "emailPlaceholder": "your@email.com",
+    "ctaButton": "加入等候名单",
+    "ctaButtonLoading": "提交中...",
+    "successMessage": "🎉 谢谢！您已加入等候名单。",
+    "errorMessage": "发生错误，请重试。",
+    "privacyText": "成为首批体验 Kanbun 的用户 🇯🇵",
+    "stats": {
+      "levels": "N5-N1",
+      "levelsLabel": "所有级别",
+      "questions": "1000+",
+      "questionsLabel": "题目",
+      "ai": "AI",
+      "aiLabel": "自适应"
+    }
+  },
+  "features": {
+    "title": "JLPT 备考一站式解决方案",
+    "subtitle": "完整的平台，帮助您系统高效地准备考试",
+    "list": [
+      {
+        "icon": "🎯",
+        "title": "自适应测验",
+        "description": "根据您的水平调整练习难度，识别薄弱环节，实现个性化学习。"
+      },
+      {
+        "icon": "📊",
+        "title": "进度跟踪",
+        "description": "实时查看您的进度，按技能和 JLPT 级别提供详细统计数据。"
+      },
+      {
+        "icon": "📝",
+        "title": "词汇与汉字",
+        "description": "通过分级列表和智能闪卡学习必备词汇和汉字。"
+      },
+      {
+        "icon": "🎧",
+        "title": "听力理解",
+        "description": "通过真实听力练习提高您的口语理解能力。"
+      },
+      {
+        "icon": "✍️",
+        "title": "实用语法",
+        "description": "通过清晰的解释和实践练习掌握 JLPT 语法要点。"
+      },
+      {
+        "icon": "🏆",
+        "title": "模拟考试",
+        "description": "在真实条件下进行完整的计时模拟考试和评分。"
+      }
+    ],
+    "problemSolution": {
+      "title": "JLPT 备考不应该这么复杂",
+      "problemTitle": "😓 问题所在",
+      "problems": [
+        "资源分散在互联网各处",
+        "难以跟踪学习进度",
+        "没有适合自己水平的练习",
+        "缺乏个性化反馈"
+      ],
+      "solutionTitle": "✨ 解决方案",
+      "solutions": [
+        "所有内容集中在一个地方",
+        "详细的进度跟踪",
+        "AI 自适应练习",
+        "即时准确的反馈"
+      ]
+    }
+  },
+  "footer": {
+    "description": "智能学习平台，助您顺利通过 JLPT。通过自适应测验高效备考。",
+    "product": "产品",
+    "features": "功能",
+    "pricing": "价格",
+    "blog": "博客",
+    "support": "支持",
+    "faq": "常见问题",
+    "contact": "联系",
+    "privacy": "隐私",
+    "copyright": "版权所有。Made with ❤️ for JLPT learners"
+  },
+  "blog": {
+    "title": "Kanbun 博客",
+    "subtitle": "JLPT 备考技巧、策略和资源",
+    "comingSoon": {
+      "title": "文章即将发布",
+      "description": "我们正在准备优质内容，帮助您备考 JLPT。敬请期待！",
+      "cta": "加入等候名单"
+    },
+    "backToHome": "Kanbun"
+  }
+}

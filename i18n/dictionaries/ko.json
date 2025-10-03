@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "badge": "곧 출시",
+    "title": "자신감 있게",
+    "titleHighlight": "JLPT",
+    "titleEnd": "마스터하기",
+    "subtitle": "일본어 시험을 성공적으로 준비할 수 있는 지능형 학습 플랫폼. 적응형 퀴즈와 맞춤형 추적으로 효율적으로 준비하세요.",
+    "emailPlaceholder": "your@email.com",
+    "ctaButton": "대기자 명단 가입",
+    "ctaButtonLoading": "가입 중...",
+    "successMessage": "🎉 감사합니다! 대기자 명단에 등록되었습니다.",
+    "errorMessage": "오류가 발생했습니다. 다시 시도해주세요.",
+    "privacyText": "Kanbun을 가장 먼저 경험해보세요 🇯🇵",
+    "stats": {
+      "levels": "N5-N1",
+      "levelsLabel": "모든 레벨",
+      "questions": "1000+",
+      "questionsLabel": "문제",
+      "ai": "AI",
+      "aiLabel": "적응형"
+    }
+  },
+  "features": {
+    "title": "JLPT 합격을 위한 모든 것",
+    "subtitle": "체계적이고 효율적으로 시험을 준비할 수 있는 완벽한 플랫폼",
+    "list": [
+      {
+        "icon": "🎯",
+        "title": "적응형 퀴즈",
+        "description": "여러분의 수준에 맞춰 조정되고 약점을 파악하여 맞춤형 학습을 제공하는 연습문제."
+      },
+      {
+        "icon": "📊",
+        "title": "진도 추적",
+        "description": "기술 및 JLPT 레벨별 상세 통계로 실시간 진행 상황을 확인하세요."
+      },
+      {
+        "icon": "📝",
+        "title": "어휘 및 한자",
+        "description": "레벨별로 정리된 목록과 스마트 플래시카드로 필수 단어와 한자를 학습하세요."
+      },
+      {
+        "icon": "🎧",
+        "title": "듣기 이해",
+        "description": "실제 듣기 연습으로 구두 이해력을 향상시키세요."
+      },
+      {
+        "icon": "✍️",
+        "title": "실용 문법",
+        "description": "명확한 설명과 실습 문제로 JLPT 문법 포인트를 마스터하세요."
+      },
+      {
+        "icon": "🏆",
+        "title": "모의 시험",
+        "description": "실제 조건에서 시간 제한이 있는 전체 시험으로 준비하세요."
+      }
+    ],
+    "problemSolution": {
+      "title": "JLPT 준비가 복잡할 필요는 없습니다",
+      "problemTitle": "😓 문제점",
+      "problems": [
+        "인터넷에 흩어진 자료",
+        "진행 상황 추적의 어려움",
+        "자신의 수준에 맞는 연습 부족",
+        "맞춤형 피드백 부족"
+      ],
+      "solutionTitle": "✨ 해결책",
+      "solutions": [
+        "한 곳에 모든 것이 집중",
+        "진행 상황의 상세 추적",
+        "연습을 조정하는 AI",
+        "즉각적이고 정확한 피드백"
+      ]
+    }
+  },
+  "footer": {
+    "description": "JLPT를 성공적으로 준비할 수 있는 지능형 학습 플랫폼. 적응형 퀴즈로 효율적으로 준비하세요.",
+    "product": "제품",
+    "features": "기능",
+    "pricing": "가격",
+    "blog": "블로그",
+    "support": "지원",
+    "faq": "FAQ",
+    "contact": "연락처",
+    "privacy": "개인정보",
+    "copyright": "모든 권리 보유. Made with ❤️ for JLPT learners"
+  },
+  "blog": {
+    "title": "Kanbun 블로그",
+    "subtitle": "JLPT를 성공적으로 준비하기 위한 팁, 전략 및 리소스",
+    "comingSoon": {
+      "title": "곧 게시될 기사",
+      "description": "JLPT 준비를 도와드릴 양질의 콘텐츠를 준비하고 있습니다. 곧 다시 방문해주세요!",
+      "cta": "대기자 명단 가입"
+    },
+    "backToHome": "Kanbun"
+  }
+}
