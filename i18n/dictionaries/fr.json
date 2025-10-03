@@ -1,23 +1,23 @@
 {
   "hero": {
-    "badge": "Bientôt disponible",
-    "title": "Maîtrisez le",
-    "titleHighlight": "JLPT",
-    "titleEnd": "avec confiance",
-    "subtitle": "Votre plateforme complète pour réussir votre examen de japonais. Préparez-vous efficacement avec des quiz personnalisés et un suivi détaillé.",
+    "badge": "Lancement Novembre 2025",
+    "title": "Passez le JLPT et",
+    "titleHighlight": "Déverrouillez Votre Avenir",
+    "titleEnd": "au Japon",
+    "subtitle": "10 000+ questions, apprentissage gamifié et examens blancs chronométrés. Tout ce qu'il faut pour réussir, sans stress ni perte de temps.",
     "emailPlaceholder": "votre@email.com",
-    "ctaButton": "Rejoindre la liste",
-    "ctaButtonLoading": "Inscription...",
-    "successMessage": "🎉 Merci ! Vous êtes inscrit à la liste d'attente.",
+    "ctaButton": "M'avertir du lancement",
+    "ctaButtonLoading": "Envoi...",
+    "successMessage": "🎉 Merci ! Nous vous avertirons au lancement.",
     "errorMessage": "Une erreur est survenue. Réessayez.",
     "privacyText": "Soyez parmi les premiers à découvrir Kanbun 🇯🇵",
     "stats": {
       "levels": "N5-N1",
       "levelsLabel": "Tous les niveaux",
-      "questions": "1000+",
+      "questions": "10 000+",
       "questionsLabel": "Questions",
-      "ai": "Apprentissage",
-      "aiLabel": "Intelligent"
+      "launch": "Nov",
+      "launchLabel": "2025"
     }
   },
   "features": {
@@ -27,32 +27,32 @@
       {
         "icon": "🎯",
         "title": "Quiz Personnalisés",
-        "description": "Des exercices adaptés à votre niveau qui identifient vos points faibles pour un apprentissage ciblé."
+        "description": "10 000+ questions qui s'adaptent à votre niveau et ciblent vos points faibles. Ne perdez plus de temps sur ce que vous maîtrisez déjà."
       },
       {
         "icon": "📊",
-        "title": "Suivi de Progression",
-        "description": "Visualisez vos progrès en temps réel avec des statistiques détaillées par compétence et par niveau JLPT."
+        "title": "Suivi de Progression Précis",
+        "description": "Voyez exactement où vous en êtes. Des stats en temps réel vous montrent quelles compétences travailler avant l'examen."
+      },
+      {
+        "icon": "🎮",
+        "title": "Gamification",
+        "description": "Gagnez des badges, relevez des défis quotidiens et maintenez votre série d'étude. Apprendre le japonais devient addictif."
+      },
+      {
+        "icon": "📱",
+        "title": "Export Anki",
+        "description": "Exportez vos points faibles vers Anki pour réviser hors ligne. Étudiez où vous voulez, quand vous voulez."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Examens Blancs Chronométrés",
+        "description": "Entraînez-vous sous la vraie pression de l'examen avec notre chronomètre. Arrivez au JLPT confiant et préparé."
       },
       {
         "icon": "📝",
-        "title": "Vocabulaire & Kanji",
-        "description": "Apprenez les mots et kanji essentiels avec des listes organisées par niveau et des flashcards intelligentes."
-      },
-      {
-        "icon": "🎧",
-        "title": "Compréhension Orale",
-        "description": "Entraînez-vous avec des exercices d'écoute authentiques et améliorez votre compréhension orale."
-      },
-      {
-        "icon": "✍️",
-        "title": "Grammaire Pratique",
-        "description": "Maîtrisez les points de grammaire JLPT avec des explications claires et des exercices pratiques."
-      },
-      {
-        "icon": "🏆",
-        "title": "Examens Blancs",
-        "description": "Préparez-vous dans les conditions réelles avec des examens complets chronométrés et corrigés."
+        "title": "Vocabulaire & Kanji Complets",
+        "description": "Maîtrisez chaque mot et caractère nécessaire. Organisés par niveau JLPT avec répétition espacée intelligente."
       }
     ],
     "problemSolution": {
@@ -73,17 +73,57 @@
       ]
     }
   },
+  "testimonial": {
+    "title": "Une Méthode Qui Marche",
+    "quote": "J'ai créé cette méthode et l'ai appliquée moi-même : JLPT N2 réussi du premier coup tout en travaillant à plein temps. Les examens blancs chronométrés et les 10 000+ questions font toute la différence.",
+    "name": "Créateur de Kanbun",
+    "role": "JLPT N2 · Premier Essai"
+  },
+  "emailCta": {
+    "title": "Prêt à Passer le JLPT ?",
+    "subtitle": "Rejoignez la liste d'attente. Soyez averti du lancement en novembre 2025.",
+    "emailPlaceholder": "votre@email.com",
+    "ctaButton": "M'avertir du lancement",
+    "ctaButtonLoading": "Envoi...",
+    "successMessage": "🎉 Merci ! Nous vous avertirons au lancement.",
+    "errorMessage": "Une erreur est survenue. Réessayez."
+  },
   "footer": {
     "description": "Votre plateforme complète pour réussir votre JLPT. Préparez-vous efficacement avec des quiz personnalisés.",
-    "product": "Produit",
-    "features": "Fonctionnalités",
-    "pricing": "Tarifs",
     "blog": "Blog",
-    "support": "Support",
-    "faq": "FAQ",
-    "contact": "Contact",
-    "privacy": "Confidentialité",
+    "privacy": "Politique de Confidentialité",
     "copyright": "Tous droits réservés. Made with ❤️ for JLPT learners"
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Protection de vos données et droits à la vie privée",
+    "lastUpdated": "Dernière mise à jour",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Chez Kanbun, nous respectons votre vie privée et nous engageons à protéger vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations conformément au RGPD."
+      },
+      "dataCollection": {
+        "title": "Données Collectées",
+        "content": "Lorsque vous rejoignez notre liste d'attente, nous collectons : votre adresse e-mail, votre langue préférée, la date d'inscription et des informations techniques (user-agent du navigateur, adresse IP) à des fins de sécurité."
+      },
+      "dataUse": {
+        "title": "Utilisation de Vos Données",
+        "content": "Nous utilisons votre adresse e-mail uniquement pour vous informer du lancement de Kanbun et vous envoyer des mises à jour pertinentes sur notre plateforme de préparation au JLPT. Nous ne vendrons jamais vos données à des tiers."
+      },
+      "dataStorage": {
+        "title": "Stockage des Données",
+        "content": "Vos données sont stockées en toute sécurité sur les serveurs Supabase situés dans l'Union européenne, garantissant la conformité au RGPD. Nous mettons en œuvre des mesures de sécurité standard pour protéger vos informations."
+      },
+      "yourRights": {
+        "title": "Vos Droits",
+        "content": "En vertu du RGPD, vous avez le droit de : accéder à vos données, demander leur correction ou suppression, retirer votre consentement à tout moment, et déposer une plainte auprès d'une autorité de contrôle. Pour exercer ces droits, contactez-nous à privacy@kanbun.co"
+      },
+      "contact": {
+        "title": "Nous Contacter",
+        "content": "Si vous avez des questions concernant cette politique de confidentialité ou nos pratiques en matière de données, veuillez nous contacter à privacy@kanbun.co"
+      }
+    }
   },
   "blog": {
     "title": "Blog Kanbun",

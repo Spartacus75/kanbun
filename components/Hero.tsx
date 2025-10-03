@@ -25,8 +25,8 @@ type Dictionary = {
       levelsLabel: string;
       questions: string;
       questionsLabel: string;
-      ai: string;
-      aiLabel: string;
+      launch: string;
+      launchLabel: string;
     };
   };
 };
@@ -65,8 +65,10 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-red-50/30 to-white dark:from-gray-900 dark:via-red-950/20 dark:to-gray-900">
-      {/* Japanese Decorative Elements */}
-      <JapaneseLanterns />
+      {/* Japanese Decorative Elements - Hidden on mobile */}
+      <div className="hidden lg:block">
+        <JapaneseLanterns />
+      </div>
       <JapaneseCharacters />
 
       {/* Animated gradient orbs */}
@@ -96,6 +98,15 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
             delay: 1
           }}
         />
+      </div>
+
+      {/* Logo */}
+      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
+        <a href={`/${lang}`} className="group">
+          <span className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500 group-hover:scale-105 inline-block transition-transform">
+            Kanbun
+          </span>
+        </a>
       </div>
 
       {/* Language Switcher */}
@@ -224,10 +235,10 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
               </div>
               <div className="group">
                 <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-pink-500 bg-clip-text text-transparent group-hover:scale-110 transition-transform inline-block">
-                  {dict.hero.stats.ai}
+                  {dict.hero.stats.launch}
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-1 font-medium">
-                  {dict.hero.stats.aiLabel}
+                  {dict.hero.stats.launchLabel}
                 </div>
               </div>
             </motion.div>

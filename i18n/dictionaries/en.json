@@ -1,23 +1,23 @@
 {
   "hero": {
-    "badge": "Coming Soon",
-    "title": "Master the",
-    "titleHighlight": "JLPT",
-    "titleEnd": "with Confidence",
-    "subtitle": "Your complete learning platform to ace your Japanese exam. Prepare effectively with personalized quizzes and detailed tracking.",
+    "badge": "Launching November 2025",
+    "title": "Pass the JLPT and",
+    "titleHighlight": "Unlock Your Future",
+    "titleEnd": "in Japan",
+    "subtitle": "10,000+ questions, gamified learning, and timed mock exams. Everything you need to succeed, without stress or wasted time.",
     "emailPlaceholder": "your@email.com",
-    "ctaButton": "Join Waitlist",
-    "ctaButtonLoading": "Joining...",
-    "successMessage": "🎉 Thank you! You're on the waitlist.",
+    "ctaButton": "Notify me at launch",
+    "ctaButtonLoading": "Submitting...",
+    "successMessage": "🎉 Thank you! We'll notify you at launch.",
     "errorMessage": "An error occurred. Please try again.",
     "privacyText": "Be among the first to discover Kanbun 🇯🇵",
     "stats": {
       "levels": "N5-N1",
       "levelsLabel": "All Levels",
-      "questions": "1000+",
+      "questions": "10,000+",
       "questionsLabel": "Questions",
-      "ai": "Smart",
-      "aiLabel": "Learning"
+      "launch": "Nov",
+      "launchLabel": "2025"
     }
   },
   "features": {
@@ -27,32 +27,32 @@
       {
         "icon": "🎯",
         "title": "Personalized Quizzes",
-        "description": "Exercises tailored to your level that identify your weaknesses for targeted learning."
+        "description": "10,000+ questions that adapt to your level and target your weak points. Never waste time on what you already know."
       },
       {
         "icon": "📊",
-        "title": "Progress Tracking",
-        "description": "Visualize your progress in real-time with detailed statistics by skill and JLPT level."
+        "title": "Precise Progress Tracking",
+        "description": "See exactly where you stand. Real-time stats show you which skills need work before exam day."
+      },
+      {
+        "icon": "🎮",
+        "title": "Gamification",
+        "description": "Earn badges, complete daily challenges, and maintain your study streak. Learning Japanese becomes addictive."
+      },
+      {
+        "icon": "📱",
+        "title": "Anki Export",
+        "description": "Export your weak points to Anki for offline review. Study anywhere, on your terms."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Timed Mock Exams",
+        "description": "Practice under real exam pressure with our timer. Walk into the JLPT confident and prepared."
       },
       {
         "icon": "📝",
-        "title": "Vocabulary & Kanji",
-        "description": "Learn essential words and kanji with lists organized by level and smart flashcards."
-      },
-      {
-        "icon": "🎧",
-        "title": "Listening Comprehension",
-        "description": "Practice with authentic listening exercises and improve your oral comprehension."
-      },
-      {
-        "icon": "✍️",
-        "title": "Practical Grammar",
-        "description": "Master JLPT grammar points with clear explanations and practical exercises."
-      },
-      {
-        "icon": "🏆",
-        "title": "Mock Exams",
-        "description": "Prepare under real conditions with timed and corrected full exams."
+        "title": "Complete Vocabulary & Kanji",
+        "description": "Master every word and character you need. Organized by JLPT level with smart spaced repetition."
       }
     ],
     "problemSolution": {
@@ -73,17 +73,57 @@
       ]
     }
   },
+  "testimonial": {
+    "title": "A Method That Works",
+    "quote": "I created this method and applied it myself: JLPT N2 passed on the first try while working full-time. The timed mock exams and 10,000+ questions make all the difference.",
+    "name": "Kanbun Creator",
+    "role": "JLPT N2 · First Attempt"
+  },
+  "emailCta": {
+    "title": "Ready to Pass the JLPT?",
+    "subtitle": "Join our waitlist. Be notified at launch in November 2025.",
+    "emailPlaceholder": "your@email.com",
+    "ctaButton": "Notify me at launch",
+    "ctaButtonLoading": "Submitting...",
+    "successMessage": "🎉 Thank you! We'll notify you at launch.",
+    "errorMessage": "An error occurred. Please try again."
+  },
   "footer": {
     "description": "Your complete learning platform to ace your JLPT. Prepare effectively with personalized quizzes.",
-    "product": "Product",
-    "features": "Features",
-    "pricing": "Pricing",
     "blog": "Blog",
-    "support": "Support",
-    "faq": "FAQ",
-    "contact": "Contact",
-    "privacy": "Privacy",
+    "privacy": "Privacy Policy",
     "copyright": "All rights reserved. Made with ❤️ for JLPT learners"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your data protection and privacy rights",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "At Kanbun, we respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and protect your information in accordance with GDPR regulations."
+      },
+      "dataCollection": {
+        "title": "Data We Collect",
+        "content": "When you join our waitlist, we collect: your email address, preferred language, date of registration, and technical information (browser user-agent, IP address) for security purposes."
+      },
+      "dataUse": {
+        "title": "How We Use Your Data",
+        "content": "We use your email address solely to notify you about Kanbun's launch and send relevant updates about our JLPT preparation platform. We will never sell your data to third parties."
+      },
+      "dataStorage": {
+        "title": "Data Storage",
+        "content": "Your data is securely stored on Supabase servers located in the European Union, ensuring GDPR compliance. We implement industry-standard security measures to protect your information."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the right to: access your data, request correction or deletion, withdraw consent at any time, and lodge a complaint with a supervisory authority. To exercise these rights, contact us at privacy@kanbun.co"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this privacy policy or our data practices, please contact us at privacy@kanbun.co"
+      }
+    }
   },
   "blog": {
     "title": "Kanbun Blog",

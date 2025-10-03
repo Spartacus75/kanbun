@@ -1,23 +1,23 @@
 {
   "hero": {
-    "badge": "即将推出",
-    "title": "自信掌握",
-    "titleHighlight": "JLPT",
-    "titleEnd": "",
-    "subtitle": "完整的学习平台，助您顺利通过日语能力考试。通过个性化测验和详细跟踪高效备考。",
+    "badge": "2025年11月推出",
+    "title": "通过JLPT考试",
+    "titleHighlight": "开启您的",
+    "titleEnd": "日本未来",
+    "subtitle": "超过10,000道题目，游戏化学习和计时模拟考试。您需要的一切，无压力，不浪费时间。",
     "emailPlaceholder": "your@email.com",
-    "ctaButton": "加入等候名单",
+    "ctaButton": "发布时通知我",
     "ctaButtonLoading": "提交中...",
-    "successMessage": "🎉 谢谢！您已加入等候名单。",
+    "successMessage": "🎉 谢谢！我们将在发布时通知您。",
     "errorMessage": "发生错误，请重试。",
     "privacyText": "成为首批体验 Kanbun 的用户 🇯🇵",
     "stats": {
       "levels": "N5-N1",
       "levelsLabel": "所有级别",
-      "questions": "1000+",
+      "questions": "10,000+",
       "questionsLabel": "题目",
-      "ai": "智能",
-      "aiLabel": "学习"
+      "launch": "11月",
+      "launchLabel": "2025"
     }
   },
   "features": {
@@ -27,32 +27,32 @@
       {
         "icon": "🎯",
         "title": "个性化测验",
-        "description": "针对您的水平定制练习，识别薄弱环节，实现精准学习。"
+        "description": "超过10,000道题目，适应您的水平并针对弱点。不再浪费时间在已经掌握的内容上。"
       },
       {
         "icon": "📊",
-        "title": "进度跟踪",
-        "description": "实时查看您的进度，按技能和 JLPT 级别提供详细统计数据。"
+        "title": "精确进度跟踪",
+        "description": "准确了解您的水平。实时统计数据显示考前需要加强的技能。"
+      },
+      {
+        "icon": "🎮",
+        "title": "游戏化",
+        "description": "赚取徽章，完成每日挑战，保持学习连胜。学习日语变得令人上瘾。"
+      },
+      {
+        "icon": "📱",
+        "title": "Anki导出",
+        "description": "将弱点导出到Anki进行离线复习。随时随地学习，由您掌控。"
+      },
+      {
+        "icon": "⏱️",
+        "title": "计时模拟考试",
+        "description": "使用我们的计时器在真实考试压力下练习。自信满满地走进JLPT考场。"
       },
       {
         "icon": "📝",
-        "title": "词汇与汉字",
-        "description": "通过分级列表和智能闪卡学习必备词汇和汉字。"
-      },
-      {
-        "icon": "🎧",
-        "title": "听力理解",
-        "description": "通过真实听力练习提高您的口语理解能力。"
-      },
-      {
-        "icon": "✍️",
-        "title": "实用语法",
-        "description": "通过清晰的解释和实践练习掌握 JLPT 语法要点。"
-      },
-      {
-        "icon": "🏆",
-        "title": "模拟考试",
-        "description": "在真实条件下进行完整的计时模拟考试和评分。"
+        "title": "完整词汇与汉字",
+        "description": "掌握所需的每个单词和字符。按JLPT级别组织，采用智能间隔重复。"
       }
     ],
     "problemSolution": {
@@ -73,17 +73,57 @@
       ]
     }
   },
+  "testimonial": {
+    "title": "一个有效的方法",
+    "quote": "我创建了这个方法并亲自应用：在全职工作的同时，第一次就通过了JLPT N2。计时模拟考试和10,000多道题目改变了一切。",
+    "name": "Kanbun 创始人",
+    "role": "JLPT N2 · 一次通过"
+  },
+  "emailCta": {
+    "title": "准备好通过JLPT了吗？",
+    "subtitle": "加入等候名单。2025年11月发布时通知您。",
+    "emailPlaceholder": "your@email.com",
+    "ctaButton": "发布时通知我",
+    "ctaButtonLoading": "提交中...",
+    "successMessage": "🎉 谢谢！我们将在发布时通知您。",
+    "errorMessage": "发生错误，请重试。"
+  },
   "footer": {
     "description": "完整的学习平台，助您顺利通过 JLPT。通过个性化测验高效备考。",
-    "product": "产品",
-    "features": "功能",
-    "pricing": "价格",
     "blog": "博客",
-    "support": "支持",
-    "faq": "常见问题",
-    "contact": "联系",
-    "privacy": "隐私",
+    "privacy": "隐私政策",
     "copyright": "版权所有。Made with ❤️ for JLPT learners"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "subtitle": "您的数据保护和隐私权",
+    "lastUpdated": "最后更新",
+    "sections": {
+      "intro": {
+        "title": "简介",
+        "content": "在Kanbun，我们尊重您的隐私并致力于保护您的个人数据。本隐私政策解释了我们如何根据GDPR法规收集、使用和保护您的信息。"
+      },
+      "dataCollection": {
+        "title": "我们收集的数据",
+        "content": "当您加入我们的等候名单时，我们收集：您的电子邮件地址、首选语言、注册日期以及出于安全目的的技术信息（浏览器user-agent、IP地址）。"
+      },
+      "dataUse": {
+        "title": "我们如何使用您的数据",
+        "content": "我们仅使用您的电子邮件地址通知您Kanbun的发布并发送有关我们JLPT备考平台的相关更新。我们绝不会将您的数据出售给第三方。"
+      },
+      "dataStorage": {
+        "title": "数据存储",
+        "content": "您的数据安全存储在位于欧盟的Supabase服务器上，确保符合GDPR。我们实施行业标准的安全措施来保护您的信息。"
+      },
+      "yourRights": {
+        "title": "您的权利",
+        "content": "根据GDPR，您有权：访问您的数据、请求更正或删除、随时撤回同意、向监管机构提出投诉。要行使这些权利，请通过privacy@kanbun.co联系我们。"
+      },
+      "contact": {
+        "title": "联系我们",
+        "content": "如果您对本隐私政策或我们的数据实践有任何疑问，请通过privacy@kanbun.co联系我们。"
+      }
+    }
   },
   "blog": {
     "title": "Kanbun 博客",
