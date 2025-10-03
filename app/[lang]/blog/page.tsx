@@ -3,8 +3,9 @@ import Footer from '@/components/Footer';
 import { getDictionary } from '@/i18n/dictionaries';
 import { Locale } from '@/i18n/config';
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dict = await getDictionary(params.lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   const blogTitles: Record<Locale, string> = {
     en: `${dict.blog.title} - Kanbun`,
@@ -14,25 +15,26 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 
   return {
-    title: blogTitles[params.lang],
+    title: blogTitles[lang],
     description: dict.blog.subtitle,
     openGraph: {
-      title: blogTitles[params.lang],
+      title: blogTitles[lang],
       description: dict.blog.subtitle,
-      url: `https://www.kanbun.co/${params.lang}/blog`,
+      url: `https://www.kanbun.co/${lang}/blog`,
     },
   };
 }
 
-export default async function BlogPage({ params }: { params: { lang: Locale } }) {
-  const dict = await getDictionary(params.lang);
+export default async function BlogPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900">
       {/* Header */}
       <header className="border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <a href={`/${params.lang}`} className="inline-flex items-center gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-400 hover:opacity-80 transition-opacity">
+          <a href={`/${lang}`} className="inline-flex items-center gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-400 hover:opacity-80 transition-opacity">
             <span>←</span> {dict.blog.backToHome}
           </a>
         </div>
@@ -57,7 +59,7 @@ export default async function BlogPage({ params }: { params: { lang: Locale } })
             {dict.blog.comingSoon.description}
           </p>
           <a
-            href={`/${params.lang}`}
+            href={`/${lang}`}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all"
           >
             {dict.blog.comingSoon.cta}
@@ -65,7 +67,7 @@ export default async function BlogPage({ params }: { params: { lang: Locale } })
         </div>
       </div>
 
-      <Footer dict={dict} lang={params.lang} />
+      <Footer dict={dict} lang={lang} />
     </main>
   );
 }

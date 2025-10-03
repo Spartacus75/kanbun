@@ -6,8 +6,8 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const locale = params.lang;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang: locale } = await params;
 
   const titles: Record<Locale, string> = {
     en: "Kanbun - Master the JLPT with Confidence",
@@ -88,20 +88,20 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default function LangLayout({
-  children,
-  params,
-}: {
+export default async function LangLayout(props: {
   children: React.ReactNode;
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
+  const params = await props.params;
+  const lang = params.lang;
+
   return (
-    <html lang={params.lang}>
+    <html lang={lang}>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="antialiased">
-        {children}
+        {props.children}
       </body>
     </html>
   );

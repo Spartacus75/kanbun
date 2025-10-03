@@ -2,8 +2,9 @@ import { getDictionary } from '@/i18n/dictionaries';
 import { Locale } from '@/i18n/config';
 import Link from 'next/link';
 
-export default async function PrivacyPage({ params }: { params: { lang: Locale } }) {
-  const dict = await getDictionary(params.lang);
+export default async function PrivacyPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
@@ -11,7 +12,7 @@ export default async function PrivacyPage({ params }: { params: { lang: Locale }
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link
-            href={`/${params.lang}`}
+            href={`/${lang}`}
             className="inline-flex items-center gap-3 group hover:opacity-80 transition-opacity"
           >
             <img
@@ -37,7 +38,7 @@ export default async function PrivacyPage({ params }: { params: { lang: Locale }
             {dict.privacy.subtitle}
           </p>
           <p className="text-sm text-gray-500 mt-4">
-            {dict.privacy.lastUpdated}: {new Date().toLocaleDateString(params.lang === 'fr' ? 'fr-FR' : params.lang === 'zh' ? 'zh-CN' : params.lang === 'ko' ? 'ko-KR' : 'en-US')}
+            {dict.privacy.lastUpdated}: {new Date().toLocaleDateString(lang === 'fr' ? 'fr-FR' : lang === 'zh' ? 'zh-CN' : lang === 'ko' ? 'ko-KR' : 'en-US')}
           </p>
         </div>
 
@@ -107,7 +108,7 @@ export default async function PrivacyPage({ params }: { params: { lang: Locale }
         {/* Back button */}
         <div className="mt-16 text-center">
           <Link
-            href={`/${params.lang}`}
+            href={`/${lang}`}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-red-600 to-pink-500 text-white font-semibold rounded-xl hover:shadow-lg hover:scale-105 transition-all"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
