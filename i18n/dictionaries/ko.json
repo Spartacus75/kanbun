@@ -4,7 +4,7 @@
     "title": "자신감 있게",
     "titleHighlight": "JLPT",
     "titleEnd": "마스터하기",
-    "subtitle": "일본어 시험을 성공적으로 준비할 수 있는 지능형 학습 플랫폼. 적응형 퀴즈와 맞춤형 추적으로 효율적으로 준비하세요.",
+    "subtitle": "일본어 시험을 성공적으로 준비할 수 있는 완벽한 학습 플랫폼. 맞춤형 퀴즈와 상세한 추적으로 효율적으로 준비하세요.",
     "emailPlaceholder": "your@email.com",
     "ctaButton": "대기자 명단 가입",
     "ctaButtonLoading": "가입 중...",
@@ -16,8 +16,8 @@
       "levelsLabel": "모든 레벨",
       "questions": "1000+",
       "questionsLabel": "문제",
-      "ai": "AI",
-      "aiLabel": "적응형"
+      "ai": "스마트",
+      "aiLabel": "학습"
     }
   },
   "features": {
@@ -26,8 +26,8 @@
     "list": [
       {
         "icon": "🎯",
-        "title": "적응형 퀴즈",
-        "description": "여러분의 수준에 맞춰 조정되고 약점을 파악하여 맞춤형 학습을 제공하는 연습문제."
+        "title": "맞춤형 퀴즈",
+        "description": "여러분의 수준에 맞춘 연습문제로 약점을 파악하여 집중 학습을 제공합니다."
       },
       {
         "icon": "📊",
@@ -68,13 +68,13 @@
       "solutions": [
         "한 곳에 모든 것이 집중",
         "진행 상황의 상세 추적",
-        "연습을 조정하는 AI",
+        "수준에 맞는 연습문제",
         "즉각적이고 정확한 피드백"
       ]
     }
   },
   "footer": {
-    "description": "JLPT를 성공적으로 준비할 수 있는 지능형 학습 플랫폼. 적응형 퀴즈로 효율적으로 준비하세요.",
+    "description": "JLPT를 성공적으로 준비할 수 있는 완벽한 학습 플랫폼. 맞춤형 퀴즈로 효율적으로 준비하세요.",
     "product": "제품",
     "features": "기능",
     "pricing": "가격",

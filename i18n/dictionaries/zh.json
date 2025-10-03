@@ -4,7 +4,7 @@
     "title": "自信掌握",
     "titleHighlight": "JLPT",
     "titleEnd": "",
-    "subtitle": "智能学习平台，助您顺利通过日语能力考试。通过自适应测验和个性化跟踪高效备考。",
+    "subtitle": "完整的学习平台，助您顺利通过日语能力考试。通过个性化测验和详细跟踪高效备考。",
     "emailPlaceholder": "your@email.com",
     "ctaButton": "加入等候名单",
     "ctaButtonLoading": "提交中...",
@@ -16,8 +16,8 @@
       "levelsLabel": "所有级别",
       "questions": "1000+",
       "questionsLabel": "题目",
-      "ai": "AI",
-      "aiLabel": "自适应"
+      "ai": "智能",
+      "aiLabel": "学习"
     }
   },
   "features": {
@@ -26,8 +26,8 @@
     "list": [
       {
         "icon": "🎯",
-        "title": "自适应测验",
-        "description": "根据您的水平调整练习难度，识别薄弱环节，实现个性化学习。"
+        "title": "个性化测验",
+        "description": "针对您的水平定制练习，识别薄弱环节，实现精准学习。"
       },
       {
         "icon": "📊",
@@ -68,13 +68,13 @@
       "solutions": [
         "所有内容集中在一个地方",
         "详细的进度跟踪",
-        "AI 自适应练习",
+        "符合您水平的练习",
         "即时准确的反馈"
       ]
     }
   },
   "footer": {
-    "description": "智能学习平台，助您顺利通过 JLPT。通过自适应测验高效备考。",
+    "description": "完整的学习平台，助您顺利通过 JLPT。通过个性化测验高效备考。",
     "product": "产品",
     "features": "功能",
     "pricing": "价格",

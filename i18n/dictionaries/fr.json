@@ -4,7 +4,7 @@
     "title": "Maîtrisez le",
     "titleHighlight": "JLPT",
     "titleEnd": "avec confiance",
-    "subtitle": "La plateforme d'apprentissage intelligente pour réussir votre examen de japonais. Préparez-vous efficacement avec des quiz adaptatifs et un suivi personnalisé.",
+    "subtitle": "Votre plateforme complète pour réussir votre examen de japonais. Préparez-vous efficacement avec des quiz personnalisés et un suivi détaillé.",
     "emailPlaceholder": "votre@email.com",
     "ctaButton": "Rejoindre la liste",
     "ctaButtonLoading": "Inscription...",
@@ -16,8 +16,8 @@
       "levelsLabel": "Tous les niveaux",
       "questions": "1000+",
       "questionsLabel": "Questions",
-      "ai": "IA",
-      "aiLabel": "Adaptatif"
+      "ai": "Apprentissage",
+      "aiLabel": "Intelligent"
     }
   },
   "features": {
@@ -26,8 +26,8 @@
     "list": [
       {
         "icon": "🎯",
-        "title": "Quiz Adaptatifs",
-        "description": "Des exercices qui s'adaptent à votre niveau et identifient vos points faibles pour un apprentissage personnalisé."
+        "title": "Quiz Personnalisés",
+        "description": "Des exercices adaptés à votre niveau qui identifient vos points faibles pour un apprentissage ciblé."
       },
       {
         "icon": "📊",
@@ -68,13 +68,13 @@
       "solutions": [
         "Tout centralisé en un seul endroit",
         "Suivi détaillé de vos progrès",
-        "IA qui adapte les exercices",
+        "Exercices adaptés à votre niveau",
         "Feedback instantané et précis"
       ]
     }
   },
   "footer": {
-    "description": "La plateforme d'apprentissage intelligente pour réussir votre JLPT. Préparez-vous efficacement avec des quiz adaptatifs.",
+    "description": "Votre plateforme complète pour réussir votre JLPT. Préparez-vous efficacement avec des quiz personnalisés.",
     "product": "Produit",
     "features": "Fonctionnalités",
     "pricing": "Tarifs",

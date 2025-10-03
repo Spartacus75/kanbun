@@ -4,7 +4,14 @@
       "Bash(npx create-next-app:*)",
       "Read(//c/Users/maana/Projects/**)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nPremière proposition de landing page Kanbun\n\n- Landing page Next.js 15 multilingue (en, fr, zh, ko)\n- Hero section avec illustration de certificat JLPT animée\n- Lanternes japonaises et kanji flottants en arrière-plan\n- Sélecteur de langue avec drapeaux\n- Section Features modernisée avec cards 3D\n- Section Problème/Solution en glassmorphism\n- Capture d''emails via API route\n- SEO optimisé avec meta tags multilingues\n- Port de développement sur 3001\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout 10 bash -c 'while ! curl -s http://localhost:3001 > /dev/null; do sleep 1; done; echo \"\"Server ready!\"\"')",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)"
     ],
     "deny": [],
     "ask": []

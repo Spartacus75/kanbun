@@ -1,11 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-
-// Simple in-memory storage for demo (replace with database in production)
-const subscribers = new Set<string>();
+import { supabase } from '@/lib/supabase';
 
 export async function POST(request: NextRequest) {
   try {
-    const { email } = await request.json();
+    const { email, language = 'en' } = await request.json();
 
     // Validate email
     if (!email || typeof email !== 'string') {
@@ -23,71 +21,55 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Check if already subscribed
-    if (subscribers.has(email.toLowerCase())) {
+    // Get user agent and IP (optional metadata)
+    const userAgent = request.headers.get('user-agent') || undefined;
+    const ipAddress = request.headers.get('x-forwarded-for') ||
+                     request.headers.get('x-real-ip') ||
+                     undefined;
+
+    // Insert into Supabase
+    const { data, error } = await supabase
+      .from('subscribers')
+      .insert([
+        {
+          email: email.toLowerCase(),
+          language,
+          user_agent: userAgent,
+          ip_address: ipAddress,
+        }
+      ])
+      .select();
+
+    // Handle errors
+    if (error) {
+      // Check if it's a duplicate email error
+      if (error.code === '23505') { // PostgreSQL unique violation code
+        return NextResponse.json(
+          { error: 'Cet email est déjà inscrit' },
+          { status: 400 }
+        );
+      }
+
+      console.error('Supabase error:', error);
       return NextResponse.json(
-        { error: 'Cet email est déjà inscrit' },
-        { status: 400 }
+        { error: 'Une erreur est survenue lors de l\'inscription' },
+        { status: 500 }
       );
     }
 
-    // Add to subscribers
-    subscribers.add(email.toLowerCase());
+    // Get total subscriber count
+    const { count } = await supabase
+      .from('subscribers')
+      .select('*', { count: 'exact', head: true });
 
-    // Log for now (replace with database save)
-    console.log('New subscriber:', email);
-    console.log('Total subscribers:', subscribers.size);
-
-    // Option 1: Use Web3Forms (simple, no backend needed)
-    // Uncomment and add your Web3Forms access key in .env.local
-    /*
-    if (process.env.WEB3FORMS_ACCESS_KEY) {
-      const web3FormsResponse = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          access_key: process.env.WEB3FORMS_ACCESS_KEY,
-          subject: 'New Kanbun Subscriber',
-          from_name: 'Kanbun Landing',
-          email: email,
-          message: `New subscriber: ${email}`,
-        }),
-      });
-
-      if (!web3FormsResponse.ok) {
-        console.error('Web3Forms error');
-      }
-    }
-    */
-
-    // Option 2: Use Resend (better for actual email campaigns)
-    // Uncomment and install resend: npm install resend
-    /*
-    if (process.env.RESEND_API_KEY) {
-      const { Resend } = await import('resend');
-      const resend = new Resend(process.env.RESEND_API_KEY);
-
-      await resend.emails.send({
-        from: 'Kanbun <onboarding@kanbun.co>',
-        to: email,
-        subject: 'Bienvenue sur la liste d\'attente Kanbun !',
-        html: `
-          <h1>Merci de rejoindre Kanbun !</h1>
-          <p>Vous êtes maintenant inscrit sur notre liste d'attente.</p>
-          <p>Nous vous tiendrons informé du lancement de la plateforme.</p>
-          <p>À bientôt ! 🇯🇵</p>
-        `,
-      });
-    }
-    */
+    console.log('New subscriber:', email, 'Language:', language);
+    console.log('Total subscribers:', count);
 
     return NextResponse.json(
       {
         success: true,
         message: 'Inscription réussie',
-        subscriberCount: subscribers.size
+        subscriberCount: count || 0
       },
       { status: 200 }
     );
@@ -100,9 +82,38 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Optional: GET endpoint to check subscriber count (protect this in production!)
+// GET endpoint to check subscriber count and stats
 export async function GET() {
-  return NextResponse.json({
-    count: subscribers.size,
-  });
+  try {
+    // Get total count
+    const { count } = await supabase
+      .from('subscribers')
+      .select('*', { count: 'exact', head: true });
+
+    // Get count by language
+    const { data: languageStats } = await supabase
+      .from('subscribers')
+      .select('language')
+      .then(async (result) => {
+        if (result.data) {
+          const stats: Record<string, number> = {};
+          result.data.forEach((row: { language: string }) => {
+            stats[row.language] = (stats[row.language] || 0) + 1;
+          });
+          return { data: stats };
+        }
+        return { data: {} };
+      });
+
+    return NextResponse.json({
+      total: count || 0,
+      byLanguage: languageStats || {},
+    });
+  } catch (error) {
+    console.error('Stats error:', error);
+    return NextResponse.json(
+      { error: 'Unable to fetch stats' },
+      { status: 500 }
+    );
+  }
 }

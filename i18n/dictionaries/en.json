@@ -4,7 +4,7 @@
     "title": "Master the",
     "titleHighlight": "JLPT",
     "titleEnd": "with Confidence",
-    "subtitle": "The intelligent learning platform to ace your Japanese exam. Prepare effectively with adaptive quizzes and personalized tracking.",
+    "subtitle": "Your complete learning platform to ace your Japanese exam. Prepare effectively with personalized quizzes and detailed tracking.",
     "emailPlaceholder": "your@email.com",
     "ctaButton": "Join Waitlist",
     "ctaButtonLoading": "Joining...",
@@ -16,8 +16,8 @@
       "levelsLabel": "All Levels",
       "questions": "1000+",
       "questionsLabel": "Questions",
-      "ai": "AI",
-      "aiLabel": "Adaptive"
+      "ai": "Smart",
+      "aiLabel": "Learning"
     }
   },
   "features": {
@@ -26,8 +26,8 @@
     "list": [
       {
         "icon": "🎯",
-        "title": "Adaptive Quizzes",
-        "description": "Exercises that adapt to your level and identify your weaknesses for personalized learning."
+        "title": "Personalized Quizzes",
+        "description": "Exercises tailored to your level that identify your weaknesses for targeted learning."
       },
       {
         "icon": "📊",
@@ -68,13 +68,13 @@
       "solutions": [
         "Everything centralized in one place",
         "Detailed tracking of your progress",
-        "AI that adapts exercises",
+        "Exercises that match your level",
         "Instant and accurate feedback"
       ]
     }
   },
   "footer": {
-    "description": "The intelligent learning platform to ace your JLPT. Prepare effectively with adaptive quizzes.",
+    "description": "Your complete learning platform to ace your JLPT. Prepare effectively with personalized quizzes.",
     "product": "Product",
     "features": "Features",
     "pricing": "Pricing",
