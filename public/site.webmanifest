@@ -1,0 +1,22 @@
+{
+  "name": "Kanbun - Master the JLPT",
+  "short_name": "Kanbun",
+  "description": "Master the JLPT with confidence. 10,000+ questions, gamified learning, and timed mock exams.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#dc2626",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait"
+}

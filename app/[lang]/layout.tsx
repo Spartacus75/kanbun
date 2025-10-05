@@ -85,6 +85,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
         'max-snippet': -1,
       },
     },
+    icons: {
+      icon: '/favicon.png',
+      apple: '/apple-touch-icon.png',
+    },
+    manifest: '/site.webmanifest',
   };
 }
 
@@ -97,9 +102,6 @@ export default async function LangLayout(props: {
 
   return (
     <html lang={lang}>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body className="antialiased">
         {props.children}
       </body>

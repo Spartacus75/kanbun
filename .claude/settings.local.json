@@ -18,7 +18,11 @@
       "Bash(git commit:*)",
       "Bash(npx next start:*)",
       "Bash(test:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(dir:*)",
+      "Bash(magick:*)",
+      "Bash(convert:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []
