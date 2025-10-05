@@ -17,7 +17,8 @@
       "Bash(npm run build:*)",
       "Bash(git commit:*)",
       "Bash(npx next start:*)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

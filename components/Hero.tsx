@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import JapaneseLanterns from './JapaneseLanterns';
 import JapaneseCharacters from './JapaneseCharacters';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -64,7 +65,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-red-50/30 to-white dark:from-gray-900 dark:via-red-950/20 dark:to-gray-900">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-white sm:bg-gradient-to-br sm:from-white sm:via-red-50/30 sm:to-white">
       {/* Japanese Decorative Elements - Hidden on mobile */}
       <div className="hidden lg:block">
         <JapaneseLanterns />
@@ -101,13 +102,32 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
       </div>
 
       {/* Logo */}
-      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
-        <a href={`/${lang}`} className="group">
-          <span className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500 group-hover:scale-105 inline-block transition-transform">
+      <motion.div
+        className="absolute top-4 left-4 sm:top-6 sm:left-1/2 sm:transform sm:-translate-x-1/2 z-20"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <a href={`/${lang}`} className="group flex items-center gap-2 sm:gap-3">
+          <motion.div
+            whileHover={{ rotate: [0, -5, 5, -5, 0], scale: 1.05 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src="/logo.png"
+              alt="Kanbun Logo"
+              width={85}
+              height={85}
+              quality={100}
+              priority
+              className="w-[45px] h-[45px] sm:w-[70px] sm:h-[70px] lg:w-[85px] lg:h-[85px]"
+            />
+          </motion.div>
+          <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-pink-500 group-hover:scale-105 inline-block transition-all duration-300 drop-shadow-lg">
             Kanbun
           </span>
         </a>
-      </div>
+      </motion.div>
 
       {/* Language Switcher */}
       <div className="absolute top-6 right-6 z-20">
@@ -127,7 +147,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-950/30 dark:to-pink-950/30 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-50 to-pink-50 border border-red-200 text-red-700 text-sm font-medium mb-6"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
@@ -137,7 +157,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
             </motion.div>
 
             {/* Main heading */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               {dict.hero.title}{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-pink-500">
@@ -156,7 +176,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
               {dict.hero.subtitle}
             </p>
 
@@ -176,7 +196,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
                     placeholder={dict.hero.emailPlaceholder}
                     required
                     disabled={isSubmitting}
-                    className="w-full px-6 py-4 rounded-2xl border-2 border-gray-200 dark:border-gray-700 focus:border-red-500 focus:outline-none focus:ring-4 focus:ring-red-100 dark:focus:ring-red-900/30 dark:bg-gray-800 dark:text-white transition-all disabled:opacity-50 text-lg"
+                    className="w-full px-6 py-4 rounded-2xl border-2 border-gray-200 focus:border-red-500 focus:outline-none focus:ring-4 focus:ring-red-100 bg-white transition-all disabled:opacity-50 text-lg"
                   />
                 </div>
                 <button
@@ -197,15 +217,15 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
                   animate={{ opacity: 1, y: 0 }}
                   className={`mt-4 text-sm font-medium ${
                     message.includes('🎉')
-                      ? 'text-green-600 dark:text-green-400'
-                      : 'text-red-600 dark:text-red-400'
+                      ? 'text-green-600'
+                      : 'text-red-600'
                   }`}
                 >
                   {message}
                 </motion.p>
               )}
 
-              <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+              <p className="mt-4 text-sm text-gray-500">
                 {dict.hero.privacyText}
               </p>
             </motion.div>
@@ -215,32 +235,58 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-8"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-6"
             >
-              <div className="group">
-                <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-pink-500 bg-clip-text text-transparent group-hover:scale-110 transition-transform inline-block">
-                  {dict.hero.stats.levels}
+              <motion.div
+                className="group relative bg-gradient-to-br from-white to-red-50 rounded-2xl p-8 border-2 border-red-200 shadow-[0_4px_20px_rgb(239,68,68,0.1)] hover:shadow-[0_8px_30px_rgb(239,68,68,0.2)] transition-all duration-300"
+                whileHover={{ y: -6, scale: 1.03 }}
+              >
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="text-5xl mb-2">
+                    ⛩️
+                  </div>
+                  <div className="text-5xl font-bold text-red-600">
+                    {dict.hero.stats.levels}
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">
+                    {dict.hero.stats.levelsLabel}
+                  </div>
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1 font-medium">
-                  {dict.hero.stats.levelsLabel}
+              </motion.div>
+
+              <motion.div
+                className="group relative bg-gradient-to-br from-white to-pink-50 rounded-2xl p-8 border-2 border-pink-200 shadow-[0_4px_20px_rgb(236,72,153,0.1)] hover:shadow-[0_8px_30px_rgb(236,72,153,0.2)] transition-all duration-300"
+                whileHover={{ y: -6, scale: 1.03 }}
+              >
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="text-5xl mb-2">
+                    🎴
+                  </div>
+                  <div className="text-5xl font-bold text-pink-600">
+                    {dict.hero.stats.questions}
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">
+                    {dict.hero.stats.questionsLabel}
+                  </div>
                 </div>
-              </div>
-              <div className="group">
-                <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-pink-500 bg-clip-text text-transparent group-hover:scale-110 transition-transform inline-block">
-                  {dict.hero.stats.questions}
+              </motion.div>
+
+              <motion.div
+                className="group relative bg-gradient-to-br from-white to-orange-50 rounded-2xl p-8 border-2 border-orange-200 shadow-[0_4px_20px_rgb(249,115,22,0.1)] hover:shadow-[0_8px_30px_rgb(249,115,22,0.2)] transition-all duration-300"
+                whileHover={{ y: -6, scale: 1.03 }}
+              >
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="text-5xl mb-2">
+                    🧩
+                  </div>
+                  <div className="text-5xl font-bold text-orange-600">
+                    {dict.hero.stats.launch}
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">
+                    {dict.hero.stats.launchLabel}
+                  </div>
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1 font-medium">
-                  {dict.hero.stats.questionsLabel}
-                </div>
-              </div>
-              <div className="group">
-                <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-pink-500 bg-clip-text text-transparent group-hover:scale-110 transition-transform inline-block">
-                  {dict.hero.stats.launch}
-                </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1 font-medium">
-                  {dict.hero.stats.launchLabel}
-                </div>
-              </div>
+              </motion.div>
             </motion.div>
           </motion.div>
 
