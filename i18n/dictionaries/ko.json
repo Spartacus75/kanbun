@@ -1,16 +1,29 @@
 {
   "hero": {
     "badge": "2025년 11월 출시",
-    "title": "JLPT 합격하고",
-    "titleHighlight": "일본에서의 미래를",
-    "titleEnd": "열어보세요",
-    "subtitle": "10,000개 이상의 문제, 게임화된 학습, 시간 제한 모의고사. 성공을 위한 모든 것, 스트레스 없이, 시간 낭비 없이.",
+    "provocativeTitle": "대부분의 JLPT 응시자가 실패합니다.",
+    "provocativeSubtitle": "이유는 다음과 같습니다.",
+    "problems": [
+      "체계적인 학습 계획 부재",
+      "실제 진도 추적 불가",
+      "무작위 문제로 연습"
+    ],
+    "solution": "Kanbun이 해결합니다. 10,000개 JLPT 문제. 스마트 추적. 2025년 11월 출시.",
     "emailPlaceholder": "your@email.com",
-    "ctaButton": "출시 알림 받기",
-    "ctaButtonLoading": "제출 중...",
-    "successMessage": "🎉 감사합니다! 출시 시 알려드리겠습니다.",
-    "errorMessage": "오류가 발생했습니다. 다시 시도해주세요.",
-    "privacyText": "Kanbun을 가장 먼저 경험해보세요 🇯🇵",
+    "ctaButton": "20% 할인 받기",
+    "ctaButtonLoading": "가입 중...",
+    "successMessage": "🎉 자리 확보! 이메일을 확인하세요.",
+    "errorMessage": "오류. 다시 시도하세요.",
+    "benefits": [
+      "20% 할인 (첫 100명)",
+      "언제든 취소 가능"
+    ],
+    "countdown": {
+      "launching": "출시까지",
+      "days": "일",
+      "hours": "시간",
+      "minutes": "분"
+    },
     "stats": {
       "levels": "N5-N1",
       "levelsLabel": "모든 레벨",

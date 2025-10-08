@@ -1,16 +1,29 @@
 {
   "hero": {
     "badge": "Lancement Novembre 2025",
-    "title": "Passez le JLPT et",
-    "titleHighlight": "Déverrouillez Votre Avenir",
-    "titleEnd": "au Japon",
-    "subtitle": "10 000+ questions, apprentissage gamifié et examens blancs chronométrés. Tout ce qu'il faut pour réussir, sans stress ni perte de temps.",
+    "provocativeTitle": "La plupart échouent au JLPT.",
+    "provocativeSubtitle": "Voici pourquoi.",
+    "problems": [
+      "Pas de plan d'étude structuré",
+      "Impossible de suivre ses vrais progrès",
+      "Pratique avec des questions aléatoires"
+    ],
+    "solution": "Kanbun résout cela. 10 000 questions JLPT. Suivi intelligent. Lancement Novembre 2025.",
     "emailPlaceholder": "votre@email.com",
-    "ctaButton": "M'avertir du lancement",
-    "ctaButtonLoading": "Envoi...",
-    "successMessage": "🎉 Merci ! Nous vous avertirons au lancement.",
-    "errorMessage": "Une erreur est survenue. Réessayez.",
-    "privacyText": "Soyez parmi les premiers à découvrir Kanbun 🇯🇵",
+    "ctaButton": "Je veux -20%",
+    "ctaButtonLoading": "Inscription...",
+    "successMessage": "🎉 Place réservée ! Vérifiez vos emails.",
+    "errorMessage": "Erreur. Réessayez.",
+    "benefits": [
+      "Réduction 20% (100 premiers)",
+      "Annulez quand vous voulez"
+    ],
+    "countdown": {
+      "launching": "Lancement dans",
+      "days": "jours",
+      "hours": "heures",
+      "minutes": "min"
+    },
     "stats": {
       "levels": "N5-N1",
       "levelsLabel": "Tous les niveaux",

@@ -1,8 +1,9 @@
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Testimonial from '@/components/Testimonial';
-import EmailCTA from '@/components/EmailCTA';
 import Footer from '@/components/Footer';
+import StickyMobileCTA from '@/components/StickyMobileCTA';
+import ExitIntentPopup from '@/components/ExitIntentPopup';
 import { getDictionary } from '@/i18n/dictionaries';
 import { Locale } from '@/i18n/config';
 
@@ -15,8 +16,9 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
       <Hero dict={dict} lang={lang} />
       <Features dict={dict} />
       <Testimonial dict={dict} />
-      <EmailCTA dict={dict} lang={lang} />
       <Footer dict={dict} lang={lang} />
+      <StickyMobileCTA lang={lang} ctaText={dict.hero.ctaButton} />
+      <ExitIntentPopup lang={lang} />
     </main>
   );
 }

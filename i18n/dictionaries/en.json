@@ -1,16 +1,29 @@
 {
   "hero": {
     "badge": "Launching November 2025",
-    "title": "Pass the JLPT and",
-    "titleHighlight": "Unlock Your Future",
-    "titleEnd": "in Japan",
-    "subtitle": "10,000+ questions, gamified learning, and timed mock exams. Everything you need to succeed, without stress or wasted time.",
+    "provocativeTitle": "Most JLPT Learners Fail.",
+    "provocativeSubtitle": "Here's Why.",
+    "problems": [
+      "No structured study plan",
+      "Can't track real progress",
+      "Practice with random questions"
+    ],
+    "solution": "Kanbun solves this. 10,000 JLPT questions. Smart tracking. Launching November 2025.",
     "emailPlaceholder": "your@email.com",
-    "ctaButton": "Notify me at launch",
-    "ctaButtonLoading": "Submitting...",
-    "successMessage": "🎉 Thank you! We'll notify you at launch.",
-    "errorMessage": "An error occurred. Please try again.",
-    "privacyText": "Be among the first to discover Kanbun 🇯🇵",
+    "ctaButton": "I want 20% OFF",
+    "ctaButtonLoading": "Joining...",
+    "successMessage": "🎉 Spot secured! Check your email.",
+    "errorMessage": "Error. Please try again.",
+    "benefits": [
+      "20% discount (first 100)",
+      "Cancel anytime"
+    ],
+    "countdown": {
+      "launching": "Launching in",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "min"
+    },
     "stats": {
       "levels": "N5-N1",
       "levelsLabel": "All Levels",
